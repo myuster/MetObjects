@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Metropolitan Museum of Art Object Search</title>
+</head>
+
+{% from "_formhelpers.html" import render_field %}
+<form method="post">
+    <d1>
+        {{render_field(form.select)}}
+        <p>
+        {{render_field(form.search)}}
+    </d1>
+    <p><input type="submit" value="search">
+</form>
+</html>
